@@ -1,0 +1,102 @@
+body {
+    font-family: 'Oswald';
+    color: $white;
+    background: $bg-grad;
+    overflow-x: hidden;
+    padding: 0 180px 0 180px;
+
+    section {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+
+        &.principal {
+            display: flex;
+            align-items: center;
+            gap: 44px;
+
+            .title {
+                width: 690px;
+
+                h3 {
+                    font-size: 30px;
+                    font-weight: 400;
+                }
+
+                h1 {
+                    font-size: 68px;
+                    font-weight: 700;
+                    line-height: 113.7%;
+                    margin: 12px 0 62px 0;
+                }
+            }
+
+            .image-1 {
+                display: block;
+
+                img {
+                    width: 724px;
+                    height: auto;
+                }
+            }
+        }
+
+        &.cards {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h2 {
+                font-weight: 700;
+                font-size: 45px;
+                line-height: 67px;
+                text-transform: uppercase;
+                margin-bottom: 130px;
+            }
+
+            .content-cards {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 58px;
+
+                .card {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 5px;
+                    background-color: $gray;
+                    transition: 0.8s ease-in-out;
+
+                    &:hover {
+                        background-color: $ocean;
+                        transition: 0.8s ease-in-out;
+                    }
+
+
+                    .content-cards {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        padding: 55px;
+                        gap: 31px;
+
+                        img {
+                            width: 94px;
+                            height: auto;
+                        }
+
+                        span {
+                            font-size: 26px;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
