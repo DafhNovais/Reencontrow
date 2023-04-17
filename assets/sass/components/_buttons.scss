@@ -1,0 +1,37 @@
+a {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &.button {
+        padding: 25px 0;
+        text-transform: uppercase;
+        font-weight: 500;
+
+        &.sm {
+            padding: 22px 84px;
+            font-size: 35px;
+        }
+
+        &.md {
+            padding: 25px 124px;
+            font-size: 40px;
+        }
+        &.lg {
+            width: 100%;
+            padding: 25px 0;
+            font-size: 40px;
+        }
+
+        &.blue {
+            background-color: $ocean;
+            color: $white;
+        }
+
+        &.white {
+            background-color: $white;
+            color: $dark-blue;
+        }
+    }
+}
